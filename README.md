@@ -23,12 +23,10 @@ Sync Jobs:
 
 # 如需单独编译 Explorer，使用命令：
 
-# 1.2 为版本号
-
 docker build -f ./Dockerfile . -t whitematrixlab/deployer-app:latest
 
 ````
-
+1.2 为版本号
 ```
 docker tag whitematrixlab/deployer-app:latest registry.cn-zhangjiakou.aliyuncs.com/whitematrixlab/deployer-app:1.2
 ````
@@ -54,7 +52,7 @@ command：所要执行的部署任务 ['./bin/execute', 'org-join-channel']
 ```
 env: 环境变量
 ```
-- name: arg
+name: arg
 ```
   value: '{"channelId": "newchannel","orgName": "neworg","networkName": "newnet","companyName": "string"}'
 ```
