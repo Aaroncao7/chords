@@ -44,16 +44,13 @@ kubectl apply -f k8s-alicloud/k8s-alicloud/create-network-job.yml
 ```
 部署job yml 在 k8s-alicloud目录下
 ```
-需要更改的参数
-```
-image：镜像的版本号
-```
-command：所要执行的部署任务 ['./bin/execute', 'org-join-channel']
-```
-env: 环境变量
-```
-name: arg
-```
+需要更改的参数：
+- image：镜像的版本号
+
+- command：所要执行的部署任务 ['./bin/execute', 'org-join-channel']
+
+- env: 环境变量
+  name: arg
   value: '{"channelId": "newchannel","orgName": "neworg","networkName": "newnet","companyName": "string"}'
-```
-需要修改参数
+
+
